@@ -1,25 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import Props from "./day1/Props";
+const App = ()=>{
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <h1>리액트 실습</h1>
+      <Props user='춘향이' text='첫번째' idx={1} />
+      <Props user='홍길동' text='두번째' idx={2} />
+      <Props user='갑순이' text='세번째' idx={3} />
     </div>
   );
 }
-
 export default App;
