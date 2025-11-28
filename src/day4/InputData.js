@@ -1,13 +1,13 @@
-import { useState } from "react"
 
-const InputData = ({title}) => {
-  const [text,setText] = useState('');
+const InputData = ({title,type,value,onChange,onBlur}) => {
   return (
     <div className="input-data">
       <input
-        placeholder="값을 입력"
-        value={text}
-        onChange={(e)=>setText(e.target.value)}
+        type={type}
+        placeholder=" "
+        value={value}
+        onChange={onChange}
+        onBlur={onBlur}
       />
       <label>{title}</label>
     </div>
